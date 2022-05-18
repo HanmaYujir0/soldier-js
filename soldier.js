@@ -1,6 +1,6 @@
 const soldier = {
     name: 'Doomguy',
-    health: 10 ,
+    health: 10,
     weapon: {
         weaponName: 'Double-Barreled Shotgun',
         amountOfAmmo: 2,
@@ -13,12 +13,12 @@ const soldier = {
         if (this.weapon.amountOfAmmo !== 0) {
             this.weapon.amountOfAmmo -= 1;
             console.log('Звук выстрела');
-        } else if(this.weapon.amountOfAmmo === 0) {
+        } else if (this.weapon.amountOfAmmo === 0) {
             console.log('Перезарядите оружие');
         }
     },
     reload() {
-        if(this.weapon.amountOfAmmo < 2 && this.ammunition !== 0){
+        if (this.weapon.amountOfAmmo < 2 && this.ammunition !== 0) {
             this.weapon.amountOfAmmo === 2;
             this.ammunition -= 1;
             console.log('Звуки перезарядки двустволки');
@@ -31,14 +31,14 @@ const soldier = {
     hurt() {
         if (this.health === 0) {
             console.log('Ты умер!')
-        }else if (this.health--) {
+        } else if (this.health--) {
             console.log('Ты ранен')
         }
     },
     healing() {
         if (this.health === 10) {
             console.log('Ты здоров!')
-        }else if (this.health++) {
+        } else if (this.health++) {
             console.log('Ты исцелен')
         }
     }
